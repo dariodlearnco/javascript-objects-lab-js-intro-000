@@ -21,3 +21,8 @@ function deleteFromObjectByKey(object, key) {
     // (it is non-destructive)
     return delete Object.assign({},object).key
 }
+
+function destructivelyDeleteFromObjectByKey(object, key) {
+    // returns object without the delete key/value pair
+    delete object[key]
+    return object
