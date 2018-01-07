@@ -14,3 +14,10 @@ function destructivelyUpdateObjectWithKeyAndValue(object, key, value) {
     // and returns the entire updated object
     return Object.assign(object, {[key]: value})
 }
+
+
+function deleteFromObjectByKey(object, key) {
+    // deletes `key` from a clone of object and returns the new object
+    // (it is non-destructive)
+    return delete Object.assign({},object).key
+}
