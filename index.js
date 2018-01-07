@@ -13,3 +13,4 @@ function destructivelyUpdateObjectWithKeyAndValue(object, key, value) {
     // updates `object` with the given `key` and `value` (it is destructive)
     // and returns the entire updated object
     return Object.assign(object, {[key]: value})
+}
