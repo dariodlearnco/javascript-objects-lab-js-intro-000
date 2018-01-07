@@ -26,3 +26,4 @@ function destructivelyDeleteFromObjectByKey(object, key) {
     // returns object without the delete key/value pair
     delete object[key]
     return object
+}
